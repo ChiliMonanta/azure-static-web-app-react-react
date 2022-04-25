@@ -15,7 +15,7 @@ resource staticWebApp 'Microsoft.Web/staticSites@2021-02-01' = {
     tier: skuTier
   }
   properties: {
-    allowConfigFileUpdates: false
+    allowConfigFileUpdates: true
     stagingEnvironmentPolicy: 'Enabled'
     buildProperties: {
       skipGithubActionWorkflowGeneration: true
