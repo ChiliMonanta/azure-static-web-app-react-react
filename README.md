@@ -1,12 +1,12 @@
-# Static Web App with React App and Api
+# Static Web App with Typescript and React
 
-This is an example of a single page application, all hosted in a single [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/). The backend is written in C# and the frontend is written in React/Typescript. The infrastructure is created with [Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/). The deployments use staging environments and is done with Github actions. This example is influenced the tutorial: https://docs.microsoft.com/en-us/azure/static-web-apps/deploy-blazor.
+This is an example of a single page application, all hosted in a single [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/). The backend is written in Tyåescript and the frontend is written in React/Typescript. The infrastructure is created with [Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/). The deployments use staging environments and is done with Github actions. This example is influenced the tutorial: https://docs.microsoft.com/en-us/azure/static-web-apps/deploy-blazor.
 
 
 ## Folder structure
 
 * **app**: The react sample application
-* **api**:  A C# Azure Functions API, which the application will call
+* **api**:  A Typescript Azure Functions API, which the application will call
 * **infrastructure**: Infrastructure by code, a bicep template
 * **.github/workflows/deploy-static-web-app.yml**: A github actions for deployment
 
@@ -94,32 +94,3 @@ https://docs.microsoft.com/en-us/azure/static-web-apps/overview
 https://useiconic.com/open
 https://react-bootstrap.github.io
 ```
-
---------------------------------------------------------------------
-
-https://github.com/bbachi/react-azure-static-web-app
-https://github.com/aaronpowell/aswa-react-template
-https://github.com/GeekTrainer/aswa-student-starter-kit
-Med dev container
-https://github.com/aaronpowell/swa-elmish-template
-
-swa cli
-https://docs.microsoft.com/en-us/azure/developer/javascript/how-to/with-web-app/static-web-app-with-swa-cli/introduction
-https://github.com/Azure/static-web-apps-cli
-
-
-https://docs.microsoft.com/en-us/azure/developer/javascript/how-to/with-web-app/static-web-app-with-swa-cli/connect-client-to-api
-
-launch.json
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Attach to Node Functions",
-            "type": "node",
-            "request": "attach",
-            "port": 9229,
-            "preLaunchTask": "func: host start"
-        }
-    ]
-}
