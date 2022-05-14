@@ -44,11 +44,9 @@ const WeatherForecast: AzureFunction = async function (context: Context, req: Ht
         } as WeatherForecastData
     })
 
-
     context.res = {
         body: result as [WeatherForecastData]
     }
-
 }
 
 export default WeatherForecast
